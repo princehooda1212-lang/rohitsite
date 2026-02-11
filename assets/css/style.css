@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*
 Template Name: Jiwan Ram Basherhar Lal Sr. Sec. Public School
-Template URL: https://html.vecuro.com/Jiwan Ram Basherhar Lal Sr. Sec. Public School
+Template URL: https://html.Government.com/Jiwan Ram Basherhar Lal Sr. Sec. Public School
 Description: Jiwan Ram Basherhar Lal Sr. Sec. Public School - Colorful Kindergarten & Preschool HTML5 Template
-Author: vecuro
-Author URI: https://themeforest.net/user/vecuro_themes
+Author:Government
+Author URI: https://themeforest.net/user/Government_themes
 Version: 1.0.0
 */
 /*=================================
@@ -73,7 +73,7 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --vs-theme-color1: #70167e;
+  --vs-theme-color1: #024ea2;
   --vs-theme-color1-rgb: 112, 22, 126;
   --vs-theme-color2: #D18109;
   --vs-theme-color2-rgb: 209, 129, 9;
@@ -1169,7 +1169,7 @@ input[type=email]::placeholder {
   transition: all 0.3s ease-in-out;
   transform-origin: center center;
   transform: scale(1);
-  color: var(--vs-title-color);
+  color: var(--vs-black-color);
 }
 .nav-prev-1:hover svg,
 .nav-prev-1:hover img,
@@ -2264,7 +2264,7 @@ input[type=email]::placeholder {
   border-radius: 16px;
   mix-blend-mode: screen;
   will-change: opacity, transform, filter, background-position;
-  background: linear-gradient(120deg, rgba(209, 129, 9, 0.6) 0%, rgba(112, 22, 126, 0.6) 50%, rgba(209, 129, 9, 0.6) 90%);
+  background: linear-gradient(120deg, rgba(209, 129, 9, 0.6) 0%,#024ea2, rgba(209, 129, 9, 0.6) 90%);
   background-size: 200% 200%;
   animation: shimmer 3s linear infinite;
   filter: blur(3px);
@@ -7703,7 +7703,7 @@ blockquote.vs-quote .quote-author {
 }
 .vs-about--image {
   min-height: 607px;
-  max-width: 607px;
+  max-width: 1007px;
   width: 100%;
   position: relative;
   /* Large devices */
@@ -7872,6 +7872,23 @@ blockquote.vs-quote .quote-author {
   }
 }
 
+
+
+
+/* ===== Achievement About Image Fix ===== */
+.vs-about--image__figure2 {
+  position: relative !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100%;
+}
+
+.vs-about--image__figure2 img {
+  width: 100%;
+  height:600px;   /* height control - change if you want bigger */
+  object-fit: cover;
+}
+
 /*------------------- 4.12. Service  -------------------*/
 .vs-service {
   margin-bottom: 0px;
@@ -7930,10 +7947,10 @@ blockquote.vs-quote .quote-author {
 }
 .vs-service__content {
   background-color: var(--vs-white-color);
-  margin: -79px 23px 0;
+  margin: -49px 23px 0;
   position: relative;
   z-index: 1;
-  padding: 30px;
+  padding: 10px;
   border-radius: 22px;
 }
 .vs-service__icon {
@@ -10280,7 +10297,7 @@ blockquote.vs-quote .quote-author {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
+  border-radius: 0%;
   /* Large devices */
 }
 @media (max-width: 1199px) {
@@ -10293,7 +10310,7 @@ blockquote.vs-quote .quote-author {
 }
 @media (max-width: 991px) {
   .vs-pro::before, .vs-pro::after {
-    --image-size: 200px;
+    --image-size: 250px;
   }
 }
 .vs-pro::after {
@@ -10301,7 +10318,7 @@ blockquote.vs-quote .quote-author {
   min-width: var(--image-size);
   min-height: var(--image-size);
   border: 3px dashed rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
+  border-radius: 0%;
   height: var(--image-size);
   width: var(--image-size);
   background-color: transparent;
@@ -10317,7 +10334,7 @@ blockquote.vs-quote .quote-author {
 }
 @media (max-width: 991px) {
   .vs-pro::after {
-    --image-size: 220px;
+    --image-size: 268px;
   }
 }
 .vs-pro--ele1, .vs-pro--ele2, .vs-pro--ele3 {
@@ -10401,7 +10418,7 @@ blockquote.vs-quote .quote-author {
   display: none;
 }
 .vs-pro__grade {
-  --grade-size: 75px;
+  --grade-size: 85px;
   min-width: var(--grade-size);
   min-height: var(--grade-size);
   width: var(--grade-size);
@@ -10410,7 +10427,7 @@ blockquote.vs-quote .quote-author {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-radius: 50%;
+  border-radius: 0%;
   color: var(--vs-white-color);
   font-weight: 700;
   text-transform: uppercase;
@@ -10431,7 +10448,7 @@ blockquote.vs-quote .quote-author {
   font-weight: 900;
 }
 .vs-pro__age {
-  font-weight: 700;
+  font-weight: 900;
 }
 .vs-pro--slider {
   padding: 10px 0 10px;
@@ -14490,7 +14507,7 @@ body.color-mode {
   top: 14px;
   left: 0;
   height: 100%;
-  width: 98%;
+  width: 100%;
   mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTkyIiBoZWlnaHQ9IjUwMyIgdmlld0JveD0iMCAwIDU5MiA1MDMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01OTAuNzk1IDEzMC44MjJDNTg2LjI4MSA2NC4wNjIgNTMzLjcxMiA4LjYyNzQ1IDQ2Ny4yMzkgMC45NjQ0NzFDNDM5LjY1NSAtMi4yMTQzMyA0MTMuNDM4IDIuNjAxNDUgMzkwLjU5NSAxMy4zOTE1QzM2MS45MjYgMjYuOTM0OSAzMjkuMTA5IDMwLjIxNTkgMjk5Ljc1MiAxOC4yMzM4QzI4OC41NTMgMTMuNjYyOSAyNzYuMzAxIDExLjE0MTcgMjYzLjQ1IDExLjE0MTdDMjI1LjY1NyAxMS4xNDE3IDE5My4wMDcgMzIuODk2NiAxNzcuMTk2IDY0LjU1MDJDMTcxLjI0NyA3Ni40NTk2IDE1OC40ODcgODIuOTc5NSAxNDUuMTczIDgyLjk1MTVDMTQ1LjA4OSA4Mi45NTE1IDE0NS4wMDMgODIuOTUxNSAxNDQuOTE5IDgyLjk1MTVDNjQuODgyOCA4Mi45NTE1IDAgMTQ3LjgzNCAwIDIyNy44NzFDMCAyODQuMzg0IDMyLjM3NDIgMzMzLjI0NCA3OS41NzkxIDM1Ny4wODhDMTE0LjMzIDM3NC42NDEgMTQzLjU1MiA0MDAuODQ4IDE2Ny4wMzcgNDMxLjkwM0MxOTkuMjg5IDQ3NC41NTEgMjUwLjM3NyA1MDIuMTIyIDMwNy45ODcgNTAyLjEyMkMzNzEuODg5IDUwMi4xMjIgNDI3Ljc1NiA0NjguMTgyIDQ1OC44MTMgNDE3LjM4N0M0NjkuNTI5IDM5OS44NjIgNDg1LjUzNSAzODYuNSA1MDIuOTkyIDM3NS42NzJDNTM1LjI1OCAzNTUuNjU3IDU1Ni43NiAzMTkuOTc1IDU1Ni43NiAyNzkuMjA2QzU1Ni43NiAyNzYuNDU5IDU1Ni42NTggMjczLjczOCA1NTYuNDU4IDI3MS4wNDVDNTU0Ljk4OSAyNTEuMjE0IDU1OS40NyAyMzEuNjQxIDU2OS45NzkgMjE0Ljc1OEM1ODQuOTcyIDE5MC42NzUgNTkyLjg4NSAxNjEuNzI5IDU5MC43OTUgMTMwLjgyMloiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8xXzUxMTApIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMV81MTEwIiB4MT0iNDU4LjkyMyIgeTE9IjM4LjM1NjkiIHgyPSI2Ni44Mzk1IiB5Mj0iNDkyLjkyNCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRkY3NDFDIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGMUMzQSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=");
   mask-size: contain;
   mask-position: center center;
