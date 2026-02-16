@@ -193,10 +193,9 @@
           </ul>
         </div>
         <div class="footer-social mb-20">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
-          <a href="https://behance.com/"><i class="fab fa-behance"></i></a>
+            <a href="https://www.facebook.com/search/top?q=jrbl%20public%20school"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/jrbl_publicschool/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@JRBLSCHOOL"><i class="fab fa-youtube"></i></a>
         </div>
         <p class="sidemenu-text sidemenu-text--footer text-center mb-0">Copyright © 2025 <a class="vs-theme-color"
             href="index.html">Jiwan Ram Basherhar Lal Sr. Sec. Public School</a>.
@@ -324,10 +323,9 @@
           <div class="footer-social social-style">
             <h4 class="social-style__title mb-0 cart-animation-item">Follow Us :</h4>
             <ul class="cart-animation-item">
-              <li><a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a></li>
-              <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+              <li><a href="https://www.facebook.com/search/top?q=jrbl%20public%20school"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com/jrblps_rw/"><i class="fab fa-instagram"></i></a></li>
+             
             </ul>
           </div>
         </div>
@@ -399,10 +397,10 @@ Rohtak-124001.  Haryana. INDIA</a>
           <hr class="sidemenu-hr sidemenu-item">
           <div class="footer-social sidemenu-item">
             <span>follow us on :</span>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a href="https://behance.com/"><i class="fab fa-behance"></i></a>
+               <a href="https://www.facebook.com/search/top?q=jrbl%20public%20school"><i class="fa-brands fa-facebook-f"></i>
+         
+            <a href="https://www.instagram.com/jrbl_publicschool/"><i class="fab fa-instagram"></i></a>
+          
           </div>
         </div>
       </div>
@@ -630,42 +628,64 @@ Rohtak-124001.  Haryana. INDIA</a>
           <img class="contact-divider" src="assets/img/elements/divider-contact.svg" alt="Jiwan Ram Basherhar Lal Sr. Sec. Public School">
           <div class="social-style style2">
             <span class="social-style__label">Follow Us :</span>
-            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-vimeo-v"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/jrblps_rw/"><i class="fab fa-instagram"></i></a>
+          
           </div>
         </div>
         <div class="col-lg-7 mb-30">
           <form action="https://html.Governmentsoft.com/Jiwan Ram Basherhar Lal Sr. Sec. Public School/demo/mail.php" method="post" class="form-style2 ajax-contact wow animate__fadeInUp"
             data-wow-delay="0.95s">
-            <div class="row gx-20">
-              <!-- First Name -->
-              <div class="col-md-6 form-group">
-                <input class="form-control" type="text" name="fname" id="fname" placeholder="Your Name *">
-              </div>
-              <!-- Last Name -->
-              <div class="col-md-6 form-group">
-                <input class="form-control" type="text" name="lname" id="lname" placeholder="Last Name *">
-              </div>
-              <!-- Email Address -->
-              <div class="col-md-6 form-group">
-                <input class="form-control" type="email" name="email" id="email" placeholder="Email Address *">
-              </div>
-              <!-- Phone Number -->
-              <div class="col-md-6 form-group">
-                <input class="form-control" type="tel" name="phone" id="phone" placeholder="Phone *">
-              </div>
-              <!-- Message -->
-              <div class="col-12 form-group">
-                <textarea class="form-control" name="message" id="message" placeholder="Type Your Message *"
-                  rows="5"></textarea>
-              </div>
-              <!-- Submit Button -->
-              <div class="col-12">
-                <button class="vs-btn"><span class="vs-btn__border"></span>Send Message</button>
-              </div>
-            </div>
+        <form onsubmit="sendToWhatsApp(); return false;">
+<div class="row gx-20">
+  <!-- First Name -->
+  <div class="col-md-6 form-group">
+    <input class="form-control" type="text" name="fname" id="fname" placeholder="Your Name *" required>
+  </div>
+
+  <!-- Last Name -->
+  <div class="col-md-6 form-group">
+    <input class="form-control" type="text" name="lname" id="lname" placeholder="Last Name">
+  </div>
+
+  <!-- WhatsApp Number (Full Width) -->
+  <div class="col-12 form-group">
+    <input class="form-control" type="tel" name="whatsapp" id="whatsapp" placeholder="WhatsApp Number *" required>
+  </div>
+
+  <!-- Message -->
+  <div class="col-12 form-group">
+    <textarea class="form-control" name="message" id="message" placeholder="Type Your Message"
+      rows="5"></textarea>
+  </div>
+
+  <!-- Submit Button -->
+  <div class="col-12">
+    <button class="vs-btn" type="submit">
+      <span class="vs-btn__border"></span>Send Message
+    </button>
+  </div>
+</div>
+</form>
+
+<script>
+function sendToWhatsApp() {
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var phone = document.getElementById("whatsapp").value;
+    var message = document.getElementById("message").value;
+
+    var text = "New Enquiry:%0A"
+        + "Name: " + fname + " " + lname + "%0A"
+        + "WhatsApp: " + phone + "%0A"
+        + "Message: " + message;
+
+    var url = "https://wa.me/91XXXXXXXXXX?text=" + text;
+
+    window.open(url, "_blank");
+}
+</script>
+
+
             <!-- Form Messages -->
           </form>
           <p class="form-messages mb-0 mt-3"></p>
