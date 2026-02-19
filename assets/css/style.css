@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Template Name: Jiwan Ram Basherhar Lal Sr. Sec. Public School
-Template URL: https://html.Government.com/Jiwan Ram Basherhar Lal Sr. Sec. Public School
-Description: Jiwan Ram Basherhar Lal Sr. Sec. Public School - Colorful Kindergarten & Preschool HTML5 Template
+Template Name: Jiwan Ram Basherhar Lal Sr. Sec.(Ranilawala) Public School
+Template URL: https://html.Government.com/Jiwan Ram Basherhar Lal Sr. Sec.(Ranilawala) Public School
+Description: Jiwan Ram Basherhar Lal Sr. Sec.(Ranilawala) Public School - Colorful Kindergarten & Preschool HTML5 Template
 Author:Government
 Author URI: https://themeforest.net/user/Government_themes
 Version: 1.0.0
@@ -1975,7 +1975,7 @@ input[type=email]::placeholder {
   margin-bottom: calc(var(--vs-section-title-space) - 45px);
 }
 .vs-title__main {
-  font-size: clamp(1.875rem, 1.563rem + 1.56vw, 3.438rem);
+  font-size: 35px;
   line-height: 1;
   transform: translateZ(0);
 }
@@ -1991,8 +1991,8 @@ input[type=email]::placeholder {
   color: var(--vs-white-color);
 }
 .vs-title__sub {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 34px;
+  font-weight: bold;
   font-family: var(--vs-special-font);
   letter-spacing: 0.48px;
   line-height: 1;
@@ -5255,6 +5255,7 @@ a.text-theme:hover,
   transition: all 0.3s ease-in-out;
 }
 
+
 /*------------------- 4.4. Breadcumb  -------------------*/
 .breadcrumb-wrapper {
   padding-top: 140px;
@@ -5286,7 +5287,8 @@ a.text-theme:hover,
 }
 .breadcrumb-wrapper__bg > img {
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
+  
   width: 100%;
 }
 .breadcrumb-wrapper__ele1 {
@@ -20668,4 +20670,71 @@ body{
   box-sizing: border-box;
   overflow-x: hidden;
   
+}
+
+
+
+
+.vision-section {
+  background: #ffffff;
+  position: relative;
+}
+
+.vision-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.vision-img img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  transition: transform 0.6s ease;
+}
+
+/* zoom on hover */
+.vision-img:hover img {
+  transform: scale(1.08);
+}
+
+/* content box */
+.vision-content {
+  padding: 30px 10px 30px 30px;
+}
+
+.vision-subtitle {
+  color: #024ea2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.vision-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 15px;
+}
+
+.vision-divider {
+  width: 60px;
+  height: 4px;
+  background: #024ea2;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.vision-text {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.9;
+  margin-bottom: 12px;
+}
+
+.vision-text strong {
+  color: #024ea2;
 }

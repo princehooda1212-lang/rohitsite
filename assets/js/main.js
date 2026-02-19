@@ -137,6 +137,8 @@
     });
   }
 
+
+
   // Run on load
   applyAnimationDelays();
 
@@ -222,6 +224,8 @@
       }
     });
   });
+
+
 
   /**************************************
    ***** 04. Swiper Connected Nav With Thumbs for Shop Details Page *****
