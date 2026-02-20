@@ -72,6 +72,91 @@ Version: 1.0.0
 /*------------------- 1.1. Mixin -------------------*/
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
+
+/* ===== GLOBAL RESPONSIVE FIX ===== */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+/* Prevent horizontal scroll */
+body{
+  overflow-x: hidden;
+}
+
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6{
+  width: 50%;
+}
+
+.col-4{
+  width: 33.33%;
+}
+
+.col-3{
+  width: 25%;
+}
+
+/* Mobile me sab full width */
+@media (max-width: 768px){
+  .col-6,
+  .col-4,
+  .col-3{
+    width: 100%;
+  }
+}
+
+h1{
+  font-size: clamp(28px, 5vw, 60px);
+}
+
+h2{
+  font-size: clamp(22px, 4vw, 40px);
+}
+
+p{
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+
+
+@media (max-width: 992px){
+  .menu{
+    display: none;
+  }
+}
+
+
+.hero-slide{
+  min-height: 100vh;
+  height: auto;
+}
+
+
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 :root {
   --vs-theme-color1: #024ea2;
   --vs-theme-color1-rgb: 112, 22, 126;
@@ -1975,8 +2060,9 @@ input[type=email]::placeholder {
   margin-bottom: calc(var(--vs-section-title-space) - 45px);
 }
 .vs-title__main {
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1;
+  font-weight: 100;
   transform: translateZ(0);
 }
 .vs-title__main .char {
@@ -1991,8 +2077,8 @@ input[type=email]::placeholder {
   color: var(--vs-white-color);
 }
 .vs-title__sub {
-  font-size: 34px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 1000;
   font-family: var(--vs-special-font);
   letter-spacing: 0.48px;
   line-height: 1;
@@ -7918,6 +8004,24 @@ blockquote.vs-quote .quote-author {
   left: auto;
   right: 0;
 }
+
+
+      
+            /* Service Card Image Fix */
+.vs-service__figure {
+    width: 100%;
+    height: 220px;      /* Sab images ki same height */
+    overflow: hidden;
+    border-radius: 21px;
+}
+
+.vs-service__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Image crop hoke perfectly fill karegi */
+    display: block;
+}
+         
 .vs-service__figure {
   position: relative;
   overflow: hidden;
@@ -7944,6 +8048,7 @@ blockquote.vs-quote .quote-author {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
   transform-origin: center center;
+  
 }
 .vs-service__image--link {
   display: inline-block;

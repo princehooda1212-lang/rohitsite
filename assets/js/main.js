@@ -334,6 +334,52 @@
     }
   });
 
+
+
+var swiper = new Swiper(".vs-carousel--class.swiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    speed: 5000,
+    autoplay: {
+        delay: 1,   // ⚠️ 0 mat rakho
+        disableOnInteraction: false,
+    },
+    freeMode: true,
+    freeModeMomentum: false,
+    breakpoints: {
+        0: { slidesPerView: 1 },
+        576: { slidesPerView: 2 },
+        768: { slidesPerView: 2 },
+        992: { slidesPerView: 3 },
+        1200: { slidesPerView: 4 }
+    }
+});
+
+/* ===== PROPER TOGGLE SYSTEM ===== */
+document.querySelectorAll(".vs-class").forEach(function(card){
+
+    card.addEventListener("click", function(e){
+
+        if(e.target.tagName === "A") return;
+
+        if(swiper.autoplay.running){
+            swiper.autoplay.stop();
+        } else {
+            swiper.autoplay.start();
+        }
+
+    });
+
+});
+
+
+  const instaLink = document.querySelector('a[href*="instagram.com"]');
+  instaLink.addEventListener('click', function(e){
+    e.preventDefault();
+    window.open(this.href, '_blank'); // force new tab
+  });
+
   /**************************************
    ***** 08. Start With Lenis & GSAP Activation *****
    **************************************/
